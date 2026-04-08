@@ -2,6 +2,9 @@
 
 ---
 
+![CapaAirbnb](https://github.com/user-attachments/assets/4b467b86-31fe-4139-963f-b49bf9a6f3e2)
+
+
 ## 📌 Sobre o Projeto
 
 Este projeto realiza uma análise completa de dados de listagens do Airbnb no Rio de Janeiro, com o objetivo de extrair insights estratégicos sobre precificação, localização, comportamento dos hosts e desempenho dos imóveis.

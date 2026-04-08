@@ -1,3 +1,6 @@
+![CapaAirbnb](https://github.com/user-attachments/assets/6fa3d1df-924f-4ec7-9ee2-3f09aa9c4822)
+
+
 # 🏡 Airbnb Rio de Janeiro — Análise de Dados & Insights
 
 ## 📌 Sobre o Projeto

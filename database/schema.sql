@@ -1,3 +1,8 @@
+-- Airbnb Rio de Janeiro Database Schema
+-- Author: Caio Hassan
+-- Description: Relational model for listings, hosts, availability and amenities
+-- Database: PostgreSQL
+
 PRAGMA foreign_keys = ON;
 
 CREATE TABLE hosts (

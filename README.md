@@ -166,6 +166,9 @@ Essas análises podem apoiar:
   * pandas
   * numpy
   * matplotlib / seaborn
+  * HDBSCAN (Clusterização - Machine Learning)
+  * ast
+  * folium
 
 * **PostgreSQL**
 

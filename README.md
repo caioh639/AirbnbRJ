@@ -1,23 +1,25 @@
-# 🏡 AirbnbRJ — Análise de Dados do Mercado de Hospedagem no Rio de Janeiro
-
----
-
-![CapaAirbnb](https://github.com/user-attachments/assets/4b467b86-31fe-4139-963f-b49bf9a6f3e2)
-
+# 🏡 Airbnb Rio de Janeiro — Análise de Dados & Insights
 
 ## 📌 Sobre o Projeto
 
-Este projeto realiza uma análise completa de dados de listagens do Airbnb no Rio de Janeiro, com o objetivo de extrair insights estratégicos sobre precificação, localização, comportamento dos hosts e desempenho dos imóveis.
+Este projeto realiza uma análise completa do mercado de Airbnb no Rio de Janeiro, com foco em identificar padrões de precificação, comportamento de hosts e oportunidades estratégicas para maximização de receita.
 
-A solução foi desenvolvida de ponta a ponta, incluindo tratamento de dados, feature engineering, análise exploratória e construção de um dashboard interativo voltado à tomada de decisão.
+A solução foi desenvolvida de ponta a ponta, contemplando:
+
+* Tratamento e preparação de dados
+* Feature engineering
+* Análise exploratória (EDA)
+* Desenvolvimento de dashboard interativo
+
+O objetivo é transformar dados brutos em **insights acionáveis para tomada de decisão**.
 
 ---
 
 ## 💼 Problema de Negócio
 
-O mercado de aluguel de curta duração apresenta alta variação de preços e desempenho entre imóveis, dificultando a tomada de decisão por parte de hosts e investidores especialmente em grande ciadades, como o Rio de Janeiro.
+O mercado de aluguel de curta duração apresenta alta variabilidade de preços e desempenho entre imóveis, tornando a tomada de decisão complexa para hosts e investidores — especialmente em grandes centros urbanos como o Rio de Janeiro.
 
-Este projeto busca responder:
+Diante desse cenário, este projeto busca responder:
 
 * Quais fatores mais influenciam o preço de um imóvel no Airbnb?
 * Quais regiões apresentam maior potencial de rentabilidade?
@@ -28,32 +30,32 @@ Este projeto busca responder:
 
 ## 🎯 Objetivos
 
-* Identificar os principais drivers que influenciam o preço dos imóveis
+* Identificar os principais drivers de preço
 * Analisar padrões geográficos por bairro e região
 * Avaliar a relação entre preço, avaliações e tipo de imóvel
 * Investigar disponibilidade e ocupação
-* Comparar o desempenho entre Superhosts e hosts regulares
-* Gerar insights acionáveis para tomada de decisão
+* Comparar desempenho entre Superhosts e hosts regulares
+* Gerar insights estratégicos para tomada de decisão
 
 ---
 
 ## 🧱 Estrutura do Projeto
 
 ```
-📁 airbnb-rio-analysis
+airbnb-rio-analysis/
 │
-├── 📁 data
+├── data/
 │   ├── raw/                # Dados brutos
 │   └── processed/          # Dados tratados
 │
-├── 📁 notebooks
+├── notebooks/
 │   └── airbnb_analysis.ipynb
 │
-├── 📁 dashboards
+├── dashboards/
 │   └── tableau_dashboard.twbx
 │
-├── 📁 assets
-│   └── images/             # Imagens e prints do dashboard
+├── assets/
+│   └── images/             # Prints do dashboard
 │
 └── README.md
 ```
@@ -62,15 +64,12 @@ Este projeto busca responder:
 
 ## ⚙️ Etapas do Projeto
 
-### 1. 📥 Coleta de Dados
+### 📥 1. Coleta de Dados
 
-* Fonte: https://insideairbnb.com/get-the-data/
+* Fonte: Inside Airbnb
+* Base com +40.000 registros e 79 variáveis
 
-* Data Dictionary: https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4
-
-* Última atualização da base: Setembro de 2025
-
-O dataset contém mais de **40.000 linhas** e **79 colunas**, incluindo:
+Principais dados analisados:
 
 * Preço
 * Localização (latitude/longitude)
@@ -80,52 +79,51 @@ O dataset contém mais de **40.000 linhas** e **79 colunas**, incluindo:
 
 ---
 
-### 2. 🧹 Limpeza e Tratamento de Dados
+### 🧹 2. Limpeza e Tratamento de Dados
 
-Principais etapas realizadas:
-
-* Remoção e tratamento de valores nulos
-* Identificação e ajuste de outliers (ex: preços inconsistentes)
-* Padronização de colunas e formatos
+* Tratamento de valores nulos
+* Remoção e ajuste de outliers (ex: preços inconsistentes)
+* Padronização de colunas
 * Conversão de tipos de dados
-* Seleção de variáveis relevantes para análise
+* Seleção de variáveis relevantes
 
 ---
 
-### 3. 🧠 Feature Engineering
+### 🧠 3. Feature Engineering
 
-Criação de variáveis estratégicas para aprofundar a análise:
+Criação de variáveis estratégicas:
 
-* `price_per_night` — preço padronizado por diária
-* `availability_rate` — taxa de disponibilidade do imóvel
+* `price_per_night` — padronização de preço
+* `availability_rate` — taxa de disponibilidade
 * `review_score_category` — categorização de avaliações
 * `host_activity_level` — nível de atividade do host
-* Agrupamentos por bairro e região
+
+Além disso:
+
+* Agregações por bairro e região
+* Criação de métricas analíticas para suporte à decisão
 
 ---
 
-### 4. 🔍 Análise Exploratória (EDA)
+### 🔍 4. Análise Exploratória (EDA)
 
-Análise detalhada para identificação de padrões e relações:
+Principais análises realizadas:
 
-* Distribuição e dispersão de preços
-* Comparação entre bairros e regiões
+* Distribuição de preços
+* Comparação entre regiões
 * Relação entre preço e avaliações
 * Análise por tipo de imóvel
-* Identificação de correlações relevantes entre variáveis
+* Identificação de correlações relevantes
 
 ---
 
-### 5. 📊 Visualização de Dados (Tableau)
+### 📊 5. Visualização de Dados (Tableau)
 
-Desenvolvimento de dashboard interativo com foco em usabilidade e tomada de decisão.
+Desenvolvimento de dashboard interativo com foco em:
 
-Principais características:
-
-* Navegação intuitiva
-* Storytelling orientado a dados
-* Hierarquia visual clara
-* Design inspirado na experiência do Airbnb
+* Tomada de decisão
+* Experiência do usuário
+* Clareza visual
 
 Principais análises disponíveis:
 
@@ -138,113 +136,103 @@ Principais análises disponíveis:
 
 ## 📸 Preview do Dashboard
 
-*(adicione aqui prints do seu dashboard)*
+*(Adicione aqui imagens do seu dashboard — essa parte é MUITO importante para destacar o projeto)*
 
 ---
 
 ## 🧩 Principais Insights
 
-* Regiões com maior fluxo turístico apresentam maior variabilidade de preços, indicando oportunidades de otimização de precificação
-* Existe uma correlação positiva entre avaliações e preço, sugerindo que qualidade percebida impacta diretamente o valor cobrado
-* Bairros menos explorados apresentam potencial de entrada com menor concorrência
-* Hosts com maior nível de atividade tendem a apresentar melhor desempenho geral
+* Regiões turísticas apresentam alta variabilidade de preços → oportunidade de otimização
+* Existe correlação positiva entre avaliações e preço → qualidade percebida impacta valor
+* Bairros menos explorados indicam oportunidades de entrada com menor concorrência
+* Hosts mais ativos tendem a ter melhor desempenho geral
 
-### 📌 Impacto dos Insights
+---
 
-Essas análises podem apoiar:
+## 📌 Impacto dos Insights
+
+Os resultados deste projeto podem apoiar:
 
 * Hosts na definição de preços mais competitivos
-* Investidores na identificação de regiões estratégicas
-* Plataformas na melhoria de recomendações e posicionamento
+* Investidores na escolha de regiões estratégicas
+* Plataformas na melhoria de recomendações
 
 ---
 
 ## 🛠️ Ferramentas Utilizadas
 
-* **Python (Google Colab)**
+**Linguagens & Análise**
 
-  * pandas
-  * numpy
-  * matplotlib / seaborn
-  * HDBSCAN (Clusterização - Machine Learning)
-  * ast
-  * folium
+* Python (Google Colab)
+* pandas, numpy
+* matplotlib, seaborn
 
-* **PostgreSQL**
+**Machine Learning**
 
-  * Armazenamento e estruturação de dados
+* HDBSCAN (clusterização)
 
-* **DBeaver**
+**Dados & Banco**
 
-  * Visualização e manipulação de banco de dados
-  * Modelagem de dados
+* PostgreSQL
+* DBeaver
 
-* **Tableau**
+**Visualização**
 
-  * Construção de dashboards
-  * Visual analytics e storytelling
+* Tableau
 
-* **GitHub**
+**Versionamento**
 
-  * Versionamento e documentação do projeto
+* GitHub
 
 ---
 
 ## 🚀 Como Executar o Projeto
 
-### 1. Clone o repositório
-
 ```bash
 git clone https://github.com/seu-usuario/seu-repo.git
 ```
 
-### 2. Acesse o ambiente de análise
-
-* Abra o notebook no Google Colab ou Jupyter Notebook
-
-### 3. Execute o projeto
-
-* Rode as células sequencialmente para reproduzir a análise
+1. Abra o notebook no Google Colab ou Jupyter
+2. Execute as células sequencialmente
 
 ---
 
 ## 📈 Dashboard
 
-👉 (adicione aqui o link do Tableau Public)
+👉 *(Adicione aqui o link do Tableau Public)*
 
 ---
 
 ## 📌 Próximos Passos
 
-* Aplicação de modelos de Machine Learning para previsão de preços
-* Segmentação avançada de imóveis e perfis de hosts
+* Aplicação de modelos preditivos de preço
+* Segmentação avançada de imóveis
 * Automação do pipeline de dados
-* Publicação do dashboard em ambiente online
+* Deploy do dashboard online
 
 ---
 
 ## 🤝 Contribuição
 
-Contribuições são bem-vindas para melhoria do projeto.
+Contribuições são bem-vindas para evolução do projeto.
 
 ---
 
 ## 📬 Contato
 
 * LinkedIn: https://linkedin.com/in/caiohassan
-* GitHub:
+* GitHub: *(adicione aqui)*
 
 ---
 
 ## ⭐ Considerações Finais
 
-Este projeto demonstra a aplicação prática de um pipeline completo de dados, envolvendo:
+Este projeto demonstra a construção de um pipeline completo de dados, incluindo:
 
 * Engenharia e tratamento de dados
 * Análise exploratória
-* Criação de métricas e features
-* Visualização estratégica
-* Geração de insights orientados a negócio
+* Criação de métricas estratégicas
+* Visualização orientada a negócio
+* Geração de insights acionáveis
 
----
-
+Mais do que análise, o foco está em **transformar dados em decisão**.

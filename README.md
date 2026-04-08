@@ -69,8 +69,9 @@ airbnb-rio-analysis/
 
 ### 📥 1. Coleta de Dados
 
-* Fonte: Inside Airbnb
-* Base com +40.000 registros e 79 variáveis
+* Fonte: Inside Airbnb (https://insideairbnb.com/get-the-data/)
+* Base com +40.000 registros e 79 colunas
+* Dicionário de dados (caso precise): https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit?gid=1322284596#gid=1322284596
 
 Principais dados analisados:
 

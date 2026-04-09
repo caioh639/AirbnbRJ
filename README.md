@@ -9,10 +9,12 @@ Este projeto realiza uma análise completa do mercado de Airbnb no Rio de Janeir
 
 A solução foi desenvolvida de ponta a ponta, contemplando:
 
+* Arquitetura de Dados
 * Tratamento e preparação de dados
 * Feature engineering
 * Análise exploratória (EDA)
-* Desenvolvimento de dashboard interativo
+* Modelagem de Dados
+* Desenvolvimento de dashboard interativo (com disponibilização online)
 
 O objetivo é transformar dados brutos em **insights acionáveis para tomada de decisão**.
 
@@ -20,13 +22,13 @@ O objetivo é transformar dados brutos em **insights acionáveis para tomada de 
 
 ## 💼 Problema de Negócio
 
-O mercado de aluguel de curta duração apresenta alta variabilidade de preços e desempenho entre imóveis, tornando a tomada de decisão complexa para hosts e investidores — especialmente em grandes centros urbanos como o Rio de Janeiro.
+O mercado de aluguel de curta duração apresenta alta variabilidade de preços e desempenho entre imóveis, tornando a tomada de decisão complexa para hosts e investidores, especialmente em grandes centros urbanos como o Rio de Janeiro.
 
 Diante desse cenário, este projeto busca responder:
 
 * Quais fatores mais influenciam o preço de um imóvel no Airbnb?
 * Quais regiões apresentam maior potencial de rentabilidade?
-* Como o comportamento do host impacta o desempenho da listagem?
+* Como o comportamento do host impacta o desempenho do imóvel?
 * Existe relação entre avaliação e precificação?
 
 ---
@@ -52,15 +54,15 @@ airbnb-rio-analysis/
 │   └── processed/          # Dados tratados
 │
 ├── notebooks/
-│   └── airbnb_analysis.ipynb
+│   └── airbnb_analysis.ipynb #Código 
 │
 ├── dashboards/
-│   └── tableau_dashboard.twbx
+│   └── tableau_dashboard.twbx 
 │
 ├── assets/
 │   └── images/             # Prints do dashboard
 │
-└── README.md
+└── README.md               #Descriçào geral do projeto
 ```
 
 ---
@@ -169,11 +171,12 @@ Os resultados deste projeto podem apoiar:
 
 * Python (Google Colab)
 * pandas, numpy
-* matplotlib, seaborn
+* matplotlib, seaborn, ast
 
 **Machine Learning**
 
 * HDBSCAN (clusterização)
+* Kmeans
 
 **Dados & Banco**
 
@@ -204,21 +207,6 @@ git clone https://github.com/seu-usuario/seu-repo.git
 ## 📈 Dashboard
 
 👉 *(Adicione aqui o link do Tableau Public)*
-
----
-
-## 📌 Próximos Passos
-
-* Aplicação de modelos preditivos de preço
-* Segmentação avançada de imóveis
-* Automação do pipeline de dados
-* Deploy do dashboard online
-
----
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas para evolução do projeto.
 
 ---
 
